@@ -1,0 +1,37 @@
+:root {
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.5rem;
+  --space-6:  2rem;
+  --space-7:  3rem;
+  --space-8:  4rem;
+  --space-9:  6rem;
+  --space-10: 8rem;
+
+  --radius-xs:   3px;
+  --radius-sm:   6px;
+  --radius-md:   10px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  --shadow-xs:    0 1px 2px rgba(27, 24, 19, 0.05);
+  --shadow-sm:    0 2px 8px rgba(27, 24, 19, 0.06);
+  --shadow-md:    0 12px 28px -12px rgba(27, 24, 19, 0.18);
+  --shadow-lg:    0 28px 60px -24px rgba(27, 24, 19, 0.28);
+  --shadow-glass: 0 16px 50px -12px rgba(16, 14, 10, 0.35);
+
+  --blur-glass: 18px;
+
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 180ms;
+  --dur-base: 320ms;
+  --dur-slow: 620ms;
+
+  --maxw-content: 1240px;
+  --maxw-prose:   60ch;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+}

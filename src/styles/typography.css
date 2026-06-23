@@ -1,0 +1,25 @@
+:root {
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --display-hero: 400 clamp(3.5rem, 7vw, 7rem)/0.98 var(--font-display);
+  --display-1: 400 clamp(2.75rem, 4.5vw, 4.5rem)/1.02 var(--font-display);
+  --display-2: 400 clamp(2.25rem, 3.4vw, 3.25rem)/1.06 var(--font-display);
+  --display-3: 500 clamp(1.75rem, 2.4vw, 2.25rem)/1.12 var(--font-display);
+  --numeral-xl: 500 clamp(3rem, 5vw, 5rem)/1 var(--font-display);
+
+  --text-xl:   400 1.375rem/1.5 var(--font-sans);
+  --text-lg:   400 1.125rem/1.6 var(--font-sans);
+  --text-base: 400 1rem/1.65 var(--font-sans);
+  --text-sm:   400 0.875rem/1.55 var(--font-sans);
+  --text-xs:   500 0.75rem/1.4 var(--font-sans);
+
+  --eyebrow: 600 0.72rem/1 var(--font-sans);
+  --eyebrow-tracking: 0.22em;
+
+  --weight-light:    300;
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}

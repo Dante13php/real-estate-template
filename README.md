@@ -11,6 +11,12 @@ coding experience required.**
 - 📱 Looks great on phones, tablets and desktops
 - ⚡ Fast, lightweight, and ready to deploy to Vercel, Netlify or Hostinger
 
+## Download
+
+**[⬇ Download domus-template.zip](https://github.com/Dante13php/real-estate-template/releases/download/v1.0.0/domus-template.zip)**
+
+Unzip the file, then follow the [installation instructions](#2-installation-run-it-on-your-computer) below.
+
 ---
 
 ## Table of contents

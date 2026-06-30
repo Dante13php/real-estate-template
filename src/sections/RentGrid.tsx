@@ -1,7 +1,7 @@
 import React from 'react'
 import { Eyebrow } from '../components/Eyebrow'
 import { PropertyCard } from '../components/PropertyCard'
-import { RENTALS } from '../data'
+import { grid, rentals as RENTALS } from '../content/rent'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
@@ -11,10 +11,10 @@ export function RentGrid() {
       <div style={SHELL}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1.2rem', marginBottom: '2.4rem' }}>
           <div>
-            <Eyebrow rule>Available now</Eyebrow>
-            <h2 style={{ font: 'var(--display-2)', color: 'var(--text-strong)', margin: '1rem 0 0' }}>Residences to let</h2>
+            <Eyebrow rule>{grid.eyebrow}</Eyebrow>
+            <h2 style={{ font: 'var(--display-2)', color: 'var(--text-strong)', margin: '1rem 0 0' }}>{grid.heading}</h2>
           </div>
-          <span style={{ font: 'var(--text-sm)', color: 'var(--text-muted)' }}>{RENTALS.length} furnished &amp; unfurnished homes</span>
+          <span style={{ font: 'var(--text-sm)', color: 'var(--text-muted)' }}>{RENTALS.length} {grid.note}</span>
         </div>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', gap: '1.8rem' }}>
           {RENTALS.map((p) => (

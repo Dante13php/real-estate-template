@@ -2,7 +2,7 @@ import React from 'react'
 import { MapPin, CalendarDays, Layers, ArrowRight } from 'lucide-react'
 import { Badge } from '../components/Badge'
 import { Button } from '../components/Button'
-import { DEVELOPMENTS } from '../data'
+import { developments as DEVELOPMENTS, list } from '../content/developments'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
@@ -32,7 +32,7 @@ function DevRow({ d, i }: { d: typeof DEVELOPMENTS[number]; i: number }) {
             </span>
           ))}
         </div>
-        <Button variant="secondary" iconRight={<ArrowRight size={16} />}>View the development</Button>
+        <Button variant="secondary" iconRight={<ArrowRight size={16} />}>{list.cta}</Button>
       </div>
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { PropertyCard } from '../components/PropertyCard'
-import { PROPERTIES } from '../data'
+import { featuredProperties as PROPERTIES } from '../content/home'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 

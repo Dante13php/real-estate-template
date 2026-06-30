@@ -1,7 +1,7 @@
 import React from 'react'
 import { MapPin } from 'lucide-react'
 import { Eyebrow } from '../components/Eyebrow'
-import { LOCATIONS } from '../data'
+import { locations } from '../content/home'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
@@ -13,14 +13,14 @@ export function Locations() {
       <div style={SHELL}>
         <div style={{ display: 'grid', gridTemplateColumns: 'minmax(260px, 1fr) 1.3fr', gap: 'clamp(2rem, 6vw, 5rem)', alignItems: 'center' }}>
           <div>
-            <div style={{ color: 'var(--clay-300)' }}><Eyebrow rule>Featured locations</Eyebrow></div>
-            <h2 style={{ font: 'var(--display-2)', color: '#fff', margin: '1rem 0 1.2rem' }}>Where our residences live</h2>
+            <div style={{ color: 'var(--clay-300)' }}><Eyebrow rule>{locations.eyebrow}</Eyebrow></div>
+            <h2 style={{ font: 'var(--display-2)', color: '#fff', margin: '1rem 0 1.2rem' }}>{locations.heading}</h2>
             <p style={{ font: 'var(--text-base)', color: 'rgba(255,255,255,0.72)', maxWidth: '38ch' }}>
-              Six districts, each chosen for its character. Hover to see what's available now.
+              {locations.subtitle}
             </p>
           </div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'var(--border-on-ink)', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-            {LOCATIONS.map((l) => (
+            {locations.items.map((l) => (
               <div
                 key={l.name}
                 onMouseEnter={() => setHover(l.name)}

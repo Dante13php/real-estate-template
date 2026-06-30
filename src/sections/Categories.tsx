@@ -1,7 +1,7 @@
 import React from 'react'
 import { Eyebrow } from '../components/Eyebrow'
 import { CategoryTabs } from '../components/CategoryTabs'
-import { CATEGORIES } from '../data'
+import { categories } from '../content/home'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
@@ -16,11 +16,11 @@ export function Categories({ active, setActive }: CategoriesProps) {
       <div style={SHELL}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: '1.5rem', marginBottom: '2.2rem' }}>
           <div>
-            <Eyebrow rule>Browse by category</Eyebrow>
-            <h2 style={{ font: 'var(--display-2)', color: 'var(--text-strong)', margin: '1rem 0 0' }}>A residence for every chapter</h2>
+            <Eyebrow rule>{categories.eyebrow}</Eyebrow>
+            <h2 style={{ font: 'var(--display-2)', color: 'var(--text-strong)', margin: '1rem 0 0' }}>{categories.heading}</h2>
           </div>
         </div>
-        <CategoryTabs items={CATEGORIES} value={active} onChange={setActive} />
+        <CategoryTabs items={categories.items} value={active} onChange={setActive} />
       </div>
     </section>
   )

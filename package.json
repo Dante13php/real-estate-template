@@ -3,10 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "description": "DOMUS — Luxury Real Estate Website Template",
+  "author": "WebsiteHandcraft",
+  "license": "SEE LICENSE IN License.txt",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",

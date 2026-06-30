@@ -1,26 +1,17 @@
 import React from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Button } from '../components/Button'
+import { brand, nav } from '../content/site'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
-const LINKS = [
-  { key: 'buy',   label: 'Buy',              to: '/' },
-  { key: 'rent',  label: 'Rent',             to: '/rent' },
-  { key: 'new',   label: 'New Developments', to: '/new-developments' },
-  { key: 'about', label: 'About',            to: '/about' },
-]
-
-function activeKey(pathname: string) {
-  if (pathname.startsWith('/rent'))             return 'rent'
-  if (pathname.startsWith('/new-developments')) return 'new'
-  if (pathname.startsWith('/about'))            return 'about'
-  return 'buy'
+// Highlights the menu link that best matches the current page address.
+function isActive(to: string, pathname: string) {
+  return to === '/' ? pathname === '/' : pathname.startsWith(to)
 }
 
 export function Nav() {
   const { pathname } = useLocation()
-  const active = activeKey(pathname)
 
   React.useEffect(() => { window.scrollTo(0, 0) }, [pathname])
 
@@ -36,23 +27,23 @@ export function Nav() {
     }}>
       <div style={{ ...SHELL, height: 72, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Link to="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-          <svg width="130" height="34" viewBox="0 0 240 64" role="img" aria-label="DOMUS">
-            <text x="0" y="44" fontFamily="'Cormorant Garamond','Times New Roman',serif" fontSize="46" fontWeight="500" letterSpacing="6" fill="#1B1813">DOMUS</text>
-            <circle cx="226" cy="16" r="3" fill="#B97A4A" />
+          <svg width="130" height="34" viewBox="0 0 240 64" role="img" aria-label={brand.name}>
+            <text x="0" y="44" fontFamily="'Cormorant Garamond','Times New Roman',serif" fontSize="46" fontWeight="500" letterSpacing="6" fill="#1B1813">{brand.name}</text>
+            <circle cx="226" cy="16" r="3" fill={brand.accentColor} />
           </svg>
         </Link>
 
         <nav style={{ display: 'flex', gap: '2.2rem' }}>
-          {LINKS.map((l) => {
-            const isActive = l.key === active
+          {nav.links.map((l) => {
+            const active = isActive(l.to, pathname)
             return (
-              <Link key={l.key} to={l.to} style={{
+              <Link key={l.to} to={l.to} style={{
                 font: 'var(--text-sm)',
-                fontWeight: isActive ? 700 : 500,
+                fontWeight: active ? 700 : 500,
                 textDecoration: 'none',
                 letterSpacing: '0.02em',
-                color: isActive ? 'var(--accent)' : 'var(--text-body)',
-                borderBottom: isActive ? '1px solid var(--accent)' : '1px solid transparent',
+                color: active ? 'var(--accent)' : 'var(--text-body)',
+                borderBottom: active ? '1px solid var(--accent)' : '1px solid transparent',
                 paddingBottom: 2,
                 transition: 'color 200ms var(--ease-out)',
               }}>{l.label}</Link>
@@ -60,7 +51,7 @@ export function Nav() {
           })}
         </nav>
 
-        <Button variant="secondary" size="sm">List a property</Button>
+        <Button variant="secondary" size="sm">{nav.cta}</Button>
       </div>
     </header>
   )

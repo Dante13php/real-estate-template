@@ -3,20 +3,21 @@ import { ArrowLeft, ArrowRight } from 'lucide-react'
 import { Eyebrow } from '../components/Eyebrow'
 import { Avatar } from '../components/Avatar'
 import { IconButton } from '../components/IconButton'
-import { TESTIMONIALS } from '../data'
+import { testimonials } from '../content/site'
 
 const SHELL: React.CSSProperties = { maxWidth: 940, margin: '0 auto', padding: '0 var(--gutter)' }
 
 export function Testimonials() {
+  const items = testimonials.items
   const [i, setI] = React.useState(0)
-  const go = (n: number) => setI((n + TESTIMONIALS.length) % TESTIMONIALS.length)
-  const t = TESTIMONIALS[i]
+  const go = (n: number) => setI((n + items.length) % items.length)
+  const t = items[i]
 
   return (
     <section style={{ background: 'var(--paper-100)', padding: 'clamp(4.5rem, 10vh, 9rem) 0' }}>
       <div style={SHELL}>
         <div style={{ textAlign: 'center' }}>
-          <Eyebrow>What our clients say</Eyebrow>
+          <Eyebrow>{testimonials.eyebrow}</Eyebrow>
         </div>
         <blockquote key={i} className="domus-fade" style={{
           font: 'var(--display-2)', fontWeight: 400, color: 'var(--text-strong)',

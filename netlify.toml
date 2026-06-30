@@ -1,0 +1,10 @@
+# Netlify configuration — used automatically when you connect this repo to Netlify.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Make page links (/rent, /about, …) work on direct visits and refreshes.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

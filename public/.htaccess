@@ -1,0 +1,10 @@
+# SPA routing for Apache servers (Hostinger, cPanel, shared hosting).
+# Makes page links like /rent and /about work when opened directly or refreshed.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>

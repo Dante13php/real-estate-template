@@ -1,6 +1,6 @@
 import React from 'react'
 import { StatCounter } from '../components/StatCounter'
-import { STATS } from '../data'
+import { stats as STATS } from '../content/site'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 

@@ -1,0 +1,106 @@
+================================================================================
+  WebsiteHandcraft — WEBSITE TEMPLATE
+  LICENSE AGREEMENT
+================================================================================
+
+Copyright (c) 2026 WebsiteHandcraft. All rights reserved.
+
+  ⚠️  Before selling: add your contact email where indicated in section 6.
+
+This License Agreement ("License") governs the use of this WebsiteHandcraft
+website template, including all of its source code, layouts, styles and
+documentation (the "Template"). By purchasing, downloading or using the Template,
+the buyer ("You" or "Licensee") agrees to the terms below.
+
+
+--------------------------------------------------------------------------------
+1. WHAT YOU ARE BUYING
+--------------------------------------------------------------------------------
+You are buying a LICENSE TO USE the Template. You are NOT buying the copyright or
+ownership of the Template itself, which remains with WebsiteHandcraft
+(the "Author").
+
+
+--------------------------------------------------------------------------------
+2. WHAT YOU ARE ALLOWED TO DO  ✅
+--------------------------------------------------------------------------------
+With one valid purchase you MAY:
+
+  a) Use the Template to build ONE (1) website / end product, for yourself or for
+     a single paying client.
+  b) Modify, customize, add to and adapt the Template's code, text, colors,
+     images and layout as much as you like.
+  c) Deploy the resulting website to any hosting provider (e.g. Vercel, Netlify,
+     Hostinger) under your own or your client's domain.
+  d) Charge a client for the work of customizing and delivering the finished
+     website to them.
+
+If you want to use the Template for more than one end product, please purchase an
+additional license for each additional project.
+
+
+--------------------------------------------------------------------------------
+3. WHAT YOU ARE NOT ALLOWED TO DO  ❌
+--------------------------------------------------------------------------------
+You MAY NOT:
+
+  a) Resell, redistribute, sublicense, share, or give away the Template itself
+     (the source files), whether modified or unmodified, as a template, theme,
+     starter kit, or template builder.
+  b) Make the Template available for others to download, including in any public
+     code repository, marketplace, or "free templates" collection.
+  c) Claim authorship of the original Template or register it (or a derivative of
+     it sold as a template) as your own intellectual property.
+  d) Use the Template in any unlawful, defamatory, or fraudulent website.
+
+In short: build and sell **finished websites** with it — do not sell or give away
+**the template itself**.
+
+
+--------------------------------------------------------------------------------
+4. THIRD-PARTY ASSETS
+--------------------------------------------------------------------------------
+The Template is built on, and ships with references to, third-party software and
+assets that are owned by their respective authors and licensed separately:
+
+  • React, React DOM .......... MIT License
+  • react-router-dom .......... MIT License
+  • lucide-react (icons) ...... ISC License
+  • Vite (build tool) ......... MIT License
+  • Fonts "Cormorant Garamond" and "Manrope", loaded via Google Fonts,
+    are licensed under the SIL Open Font License (OFL).
+
+  • DEMO PHOTOGRAPHS: The placeholder property and people photos are loaded from
+    Unsplash (https://unsplash.com) and are subject to the Unsplash License.
+    They are provided FOR DEMONSTRATION ONLY. Before publishing a live, commercial
+    website you should replace them with your own images or images you are
+    licensed to use. The Author makes no warranty regarding the rights to these
+    demo images for your specific use.
+
+You are responsible for complying with the licenses of all third-party assets.
+
+
+--------------------------------------------------------------------------------
+5. NO WARRANTY
+--------------------------------------------------------------------------------
+THE TEMPLATE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+TEMPLATE OR THE USE OR OTHER DEALINGS IN THE TEMPLATE.
+
+
+--------------------------------------------------------------------------------
+6. SUPPORT
+--------------------------------------------------------------------------------
+Unless otherwise agreed in writing, this License does not include ongoing support,
+updates, or customization services.
+
+For licensing questions, additional licenses, or support options, contact:
+  [your-email@example.com]
+
+
+================================================================================
+  © 2026 WebsiteHandcraft. All rights reserved.
+================================================================================

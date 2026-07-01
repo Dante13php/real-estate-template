@@ -15,7 +15,7 @@ export function Featured({ active }: FeaturedProps) {
   return (
     <section style={{ background: 'var(--paper-100)', padding: 'clamp(2.5rem, 5vh, 3.5rem) 0 clamp(4rem, 9vh, 8rem)' }}>
       <div style={SHELL}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', gap: '1.8rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(330px, 100%), 1fr))', gap: '1.8rem' }}>
           {shown.map((p) => (
             <PropertyCard key={p.id} {...p} onClick={() => {}} />
           ))}

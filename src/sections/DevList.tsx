@@ -3,18 +3,25 @@ import { MapPin, CalendarDays, Layers, ArrowRight } from 'lucide-react'
 import { Badge } from '../components/Badge'
 import { Button } from '../components/Button'
 import { developments as DEVELOPMENTS, list } from '../content/developments'
+import { useBreakpoint } from '../hooks/useBreakpoint'
 
 const SHELL: React.CSSProperties = { maxWidth: 'var(--maxw-content)', margin: '0 auto', padding: '0 var(--gutter)' }
 
 function DevRow({ d, i }: { d: typeof DEVELOPMENTS[number]; i: number }) {
-  const flip = i % 2 === 1
+  const { isTablet } = useBreakpoint()
+  const flip = !isTablet && i % 2 === 1
   const meta = [
     { icon: <MapPin size={16} color="var(--clay-500)" />,       text: d.location },
     { icon: <CalendarDays size={16} color="var(--clay-500)" />, text: `Completion ${d.completion}` },
     { icon: <Layers size={16} color="var(--clay-500)" />,       text: `${d.units} residences` },
   ]
   return (
-    <div className="domus-reveal" style={{ display: 'grid', gridTemplateColumns: '1.15fr 1fr', gap: 'clamp(1.5rem, 4vw, 4rem)', alignItems: 'center' }}>
+    <div className="domus-reveal" style={{
+      display: 'grid',
+      gridTemplateColumns: isTablet ? '1fr' : '1.15fr 1fr',
+      gap: 'clamp(1.5rem, 4vw, 4rem)',
+      alignItems: 'center',
+    }}>
       <div style={{ order: flip ? 2 : 1, borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)', aspectRatio: '4 / 3' }}>
         <img src={d.image} alt={d.name} style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
       </div>

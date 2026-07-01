@@ -34,8 +34,9 @@ export function Hero() {
         </div>
 
         <div style={{
-          marginTop: 'clamp(2.5rem, 6vh, 4.5rem)', display: 'inline-flex', flexWrap: 'wrap', gap: '2.6rem',
+          marginTop: 'clamp(2.5rem, 6vh, 4.5rem)', display: 'flex', flexWrap: 'wrap', gap: 'clamp(1.4rem, 4vw, 2.6rem)',
           padding: '1.4rem 2.2rem', borderRadius: 'var(--radius-lg)',
+          width: 'fit-content', maxWidth: '100%',
           background: 'var(--glass-on-dark)', border: '1px solid var(--glass-border)',
           backdropFilter: 'blur(var(--blur-glass))', WebkitBackdropFilter: 'blur(var(--blur-glass))',
           boxShadow: 'var(--shadow-glass)',

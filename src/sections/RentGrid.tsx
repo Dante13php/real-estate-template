@@ -16,7 +16,7 @@ export function RentGrid() {
           </div>
           <span style={{ font: 'var(--text-sm)', color: 'var(--text-muted)' }}>{RENTALS.length} {grid.note}</span>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(330px, 1fr))', gap: '1.8rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(min(330px, 100%), 1fr))', gap: '1.8rem' }}>
           {RENTALS.map((p) => (
             <PropertyCard key={p.id} {...p} badgeTone="glass" onClick={() => {}} />
           ))}
